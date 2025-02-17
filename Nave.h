@@ -7,5 +7,7 @@ public:
     Nave();
     void mover(char tecla);
     void dibujar();
+	int getX();
+	int getY();
 };
 

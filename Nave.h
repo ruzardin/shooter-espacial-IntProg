@@ -9,5 +9,7 @@ public:
     void dibujar();
 	int getX();
 	int getY();
+	char getSprite()const;
+	void setSprite(char sprite2);
 };
 

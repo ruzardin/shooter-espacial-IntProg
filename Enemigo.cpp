@@ -5,16 +5,16 @@
 using namespace std;
 
 Enemigo::Enemigo() : sprite('V') {
-	x = rand() % 50; // aleatoria horizontal
+	x = rand() % 49; // aleatoria horizontal
 	y = rand() % 5;  // aleatoria vertical cerca de arriba
-	velocidad = rand() % 2 + 1;  // Velocidad aleatoria (1 o 2)
+	velocidad = rand() % 1 + 2;  // Velocidad aleatoria (1 o 2)
 }
 
 void Enemigo::mover() {
-	if (x >= 50) {
+	if (x >= 49) {
 		velocidad = -velocidad;  // cambia de dirección al llegar al borde derecho
 	}
-	if (x <= 0) {
+	if (x <= 1) {
 		velocidad = -velocidad;  // cambia de dirección al llegar al borde izquierdo
 	}
 	x += velocidad;  // movimiento horizontal

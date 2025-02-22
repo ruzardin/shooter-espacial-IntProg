@@ -12,9 +12,8 @@ Meteorito::Meteorito() : sprite('*') {
 void Meteorito::mover() {
 	y++;
 	if (y >= 25) { //al llegar al fondo aparece de vuelta arriba
-		y = 5;
+		y = 1;
 		x = rand() % 50;
-		//
 	}
 }
 
